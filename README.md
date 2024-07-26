@@ -1,38 +1,50 @@
-# Cantilever Beam Analysis using MSC Marc
+# Full Analysis of a Cantilever Beam using MSC Marc
 
-This repository contains a comprehensive analysis of a cantilever beam using MSC Marc, covering linear, nonlinear, and plastic deformation studies.
+## Introduction
 
-## Contents
-- **Linear Analysis**: Evaluates initial response using small deformation and linear elastic theories.
-- **Nonlinear Analysis**: Examines behavior under large deformations beyond the elastic limit.
-- **Mesh Influence**: Studies the effect of different mesh densities on result accuracy.
-- **Plastic Deformation**: Investigates behavior when load exceeds yield strength, causing permanent deformation.
+### Background
+The analysis of cantilever beams is a fundamental topic in structural engineering, providing insight into the behavior of materials under various loading conditions. Cantilever beams, fixed at one end and free at the other, are commonly used in construction and mechanical applications due to their ability to withstand bending moments.
 
-## Objectives
-- Understand the behavior of the cantilever beam under various loading conditions.
-- Utilize MSC Marc for detailed analysis and modeling.
-- Compare results from different mesh densities to evaluate accuracy.
-- Assess the impact of plastic deformation on the beam.
+### Objective
+The primary objective of this report is to perform a comprehensive analysis of a cantilever beam using MSC Marc software, including linear, nonlinear, and plastic deformation analyses. This aims to understand the behavior of the beam under static loading conditions, utilizing small deformation theory and linear elastic theory.
 
-## Model Description
-- **Geometry**: 8 elements along the length, 1-2 elements deep.
-- **Material Properties**: Young’s Modulus: 30.0×10⁶ lb/in², Yield Stress: 65,000 lb/in², Poisson’s Ratio: 0.3.
-- **Loading**: Static load of 6000 lb applied at the free end.
+### Model Description
+- **Length, L**: 100.0 inches (2.54 meters)
+- **Width, a**: 1.0 inch (25.4 mm)
+- **Depth, b**: 2.0 inches (50.8 mm)
+- **Young’s Modulus**: 30.0×10⁶ lb/in² (207 GPa)
+- **Yield Stress**: 65,000 lb/in² (450 MPa)
+- **Poisson’s Ratio**: 0.3
+- **Applied Load, P**: 6,000 lb (27,200 N)
 
-## Software
-- **MSC Marc and Mentat 2020**
+### Analysis Steps
+1. Creating a database and defining the geometry and mesh.
+2. Assigning material properties and creating geometric properties.
+3. Setting boundary conditions and defining the load.
+4. Submitting the model for linear elastic analysis using MSC Marc.
 
-## Analysis Steps
-1. Create and mesh the model.
-2. Assign material properties.
-3. Apply boundary conditions.
-4. Define the load.
-5. Submit for analysis in MSC Marc.
+### Software and Tools
+- MSC Marc and Mentat 2020
 
-## Results
-- Displacement distributions
-- Path plots
-- History plots of displacement
-- Global plastic strain plots
+## Analysis Details
 
-This repository provides a comprehensive case study for structural engineering analysis using MSC Marc, serving as a valuable resource for understanding cantilever beam behavior under various conditions.
+### Linear Analysis
+- **Methodology**: Model creation, mesh generation, material property assignment, boundary conditions, and loading.
+- **Results**: Displacement distribution along the cantilever beam, path plot, and history plot of Y displacement at the beam tip.
+
+### Nonlinear Analysis
+- **Methodology**: Static loadcase with multi-criteria stepping procedure, structural analysis job setup, and large strain analysis.
+- **Results**: Model view, path plot, and history plot of Y displacement indicating large deformation effects.
+
+### Mesh Influence on the Analysis
+- **Methodology**: Increased mesh density from 8x1 to 8x2 elements.
+- **Results**: Comparison of deflection results for different mesh densities, showing improved accuracy with finer mesh.
+
+### Plastic Deformation Analysis
+- **Methodology**: Assignment of plastic material properties, mesh refinement to 4x16 elements.
+- **Results**: Y displacement plot and global plastic strain plot illustrating permanent deformation behavior under applied load.
+
+## Conclusion
+The analysis using MSC Marc provided a thorough understanding of the cantilever beam’s behavior under various loading conditions. The results from linear, nonlinear, and plastic deformation analyses offer valuable insights for structural engineering applications, ensuring the reliability and integrity of cantilever beams.
+
+
