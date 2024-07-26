@@ -86,6 +86,7 @@ The cantilever beam is modeled using eight 2D plane stress, assumed strain, redu
 ![Path Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path%20plot%20non%20linear.png?raw=true)
 
 ![History Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history%20plot%20non%20linear%20.png?raw=true)
+
 *The plot demonstrates a nonlinear relationship between displacement and time, indicating the effects of large deformation.*
 
 ## Mesh Influence on the Cantilever Beam Analysis
@@ -96,6 +97,7 @@ For this analysis, the mesh density of the cantilever beam is increased to 8 ele
 - **Element Type**: 2D plane stress, assumed strain, reduced integration elements
 
 ![Refined Mesh](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/mesch3.png?raw=true)
+
 *The refined mesh is used to re-run the linear and nonlinear analysis and compare the results with those obtained using the coarser 8x1 mesh.*
 
 ### Results
@@ -104,6 +106,7 @@ For this analysis, the mesh density of the cantilever beam is increased to 8 ele
 *The plot shows a linear relationship between displacement and time.*
 
 ![History Plot for Nonlinear Analysis with 8x2 Mesh Density](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history%20noon%20.png?raw=true)
+
 *The plot demonstrates a nonlinear relationship between displacement and time, indicating the effects of large deformation.*
 
 The results of the nonlinear analysis with the refined 8x2 mesh density are compared to those obtained with the coarser 8x1 mesh:
