@@ -54,7 +54,7 @@ The linear analysis was conducted using MSC Marc software. The following steps w
 ### Results
 The results of the linear analysis are presented in the following figures. These include the Displacement distribution along the cantilever beam, the history plot, and the path plot.
 
-![Displacement Distribution](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model_view_linear.png)
+![Displacement Distribution](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model%20view%20linear.png?raw=true)
 
 ![Path Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path_plot_linear.png)
 *This plot illustrates the displacement along a path from the fixed end to the free end of the beam.*
