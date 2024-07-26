@@ -56,10 +56,10 @@ The results of the linear analysis are presented in the following figures. These
 
 ![Displacement Distribution](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model%20view%20linear.png?raw=true)
 
-![Path Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path_plot_linear.png)
+![Path Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path%20plot%20linear.png?raw=true)
 *This plot illustrates the displacement along a path from the fixed end to the free end of the beam.*
 
-![History Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/historical_plot_linear.png)
+![History Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/historical%20plot%20linear.png?raw=true)
 *This plot shows the displacement at the tip of the beam over the course of the analysis and the displacement Y is perfectly linear.*
 
 ## Nonlinear Analysis of Cantilever Beam
@@ -81,11 +81,11 @@ The cantilever beam is modeled using eight 2D plane stress, assumed strain, redu
 
 ### Results
 
-![Model View for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model_view_non_linear.png)
+![Model View for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model%20view%20non%20linear%20.png?raw=true)
 
-![Path Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path_plot_non_linear.png)
+![Path Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path%20plot%20non%20linear.png?raw=true)
 
-![History Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history_plot_non_linear.png)
+![History Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history%20plot%20non%20linear%20.png?raw=true)
 *The plot demonstrates a nonlinear relationship between displacement and time, indicating the effects of large deformation.*
 
 ## Mesh Influence on the Cantilever Beam Analysis
@@ -95,15 +95,15 @@ For this analysis, the mesh density of the cantilever beam is increased to 8 ele
 - **Mesh Density**: 8 elements along the length, 2 elements along the depth
 - **Element Type**: 2D plane stress, assumed strain, reduced integration elements
 
-![Refined Mesh](https://github.com/your-username/your-repository/blob/main/path/to/mesch3.png)
+![Refined Mesh](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/mesch3.png?raw=true)
 *The refined mesh is used to re-run the linear and nonlinear analysis and compare the results with those obtained using the coarser 8x1 mesh.*
 
 ### Results
 
-![History Plot for Linear Analysis with 8x2 Mesh Density](https://github.com/your-username/your-repository/blob/main/path/to/history_plot_linear_linear.png)
+![History Plot for Linear Analysis with 8x2 Mesh Density](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history%20plot%20linear%20linear.PNG?raw=true)
 *The plot shows a linear relationship between displacement and time.*
 
-![History Plot for Nonlinear Analysis with 8x2 Mesh Density](https://github.com/your-username/your-repository/blob/main/path/to/history_noon.png)
+![History Plot for Nonlinear Analysis with 8x2 Mesh Density](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history%20noon%20.png?raw=true)
 *The plot demonstrates a nonlinear relationship between displacement and time, indicating the effects of large deformation.*
 
 The results of the nonlinear analysis with the refined 8x2 mesh density are compared to those obtained with the coarser 8x1 mesh:
@@ -136,7 +136,7 @@ A plastic property table was created using the `eq_plastic_Strain` table, consid
 #### Mesh Refinement
 The mesh was subdivided into smaller elements to enhance the accuracy of the analysis. A refined mesh density of 4 x 16 elements was utilized.
 
-![Subdivided Mesh](https://github.com/your-username/your-repository/blob/main/path/to/new_mesh.png)
+![Subdivided Mesh](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/new%20mesh.PNG?raw=true)
 
 ### Results
 The plastic deformation analysis yielded significant insights into the permanent deformation behavior of the cantilever beam under the applied load.
@@ -144,18 +144,12 @@ The plastic deformation analysis yielded significant insights into the permanent
 #### Y Displacement Plot
 The Y displacement plot illustrated the deformation of the beam under the applied load, highlighting the maximum displacement areas and providing a visual comparison between the initial and deformed shapes.
 
-![Y Displacement Plot](https://github.com/your-username/your-repository/blob/main/path/to/model_plastic.png)
+![Y Displacement Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model%20plastic%20.png?raw=true)
 
 #### Global Plastic Strain Plot
 The global plastic strain plot offered a comprehensive view of the plastic deformation across the entire beam, facilitating an understanding of the material's overall plastic response under the applied load.
 
-![Global Plastic Strain Plot](https://github.com/your-username/your-repository/blob/main/path/to/equivalent_global_plastic_strain.png)
+![Global Plastic Strain Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/equivalent%20of%20global%20plastic%20strain.png?raw=true)
 
 ## Conclusion
 The plastic deformation analysis of the cantilever beam using MSC Marc provided a thorough understanding of the material behavior beyond the elastic limit. By capturing the nonlinear and plastic properties of the material, the analysis offered valuable insights into the beam's permanent deformation under static loading conditions. This information is critical for the design and evaluation of cantilever beams in various structural engineering applications, ensuring their reliability and integrity under different loading scenarios.
-
-## Full Report
-For a detailed analysis, please refer to the [Full Analysis of the Cantilever Beam](path-to-your-pdf).
-
-
-tipload.PNG
