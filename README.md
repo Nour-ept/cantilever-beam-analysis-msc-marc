@@ -43,7 +43,7 @@ The linear analysis was conducted using MSC Marc software. The following steps w
 3. **Material Property Assignment**: Young's modulus was set to \(3 \times 10^7\), Poisson's ratio to 0.3, and mass density to 0.00074.
 4. **Boundary Conditions**: The left edge of the beam was fixed in both the X and Y directions.
 
-![Boundary Condition: Fixed](https://github.com/your-username/your-repository/blob/main/path/to/fixed.PNG)
+![Boundary Condition: Fixed](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/fixed.PNG)
 
 5. **Loading**: A point load of 6000 lb was applied at the top right node in the negative Y direction.
 
