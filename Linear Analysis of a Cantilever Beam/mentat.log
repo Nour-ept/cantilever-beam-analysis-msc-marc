@@ -1,0 +1,14 @@
+Marc Mentat (C)Copyright 1994-2020, MSC Software Corporation, all rights reserved
+Command > *open_model "c:\users\lenovo\desktop\workshop2\8- linear analysis of a cantilever beam\tip_loaad.mud"
+File has been written by Mentat 2020.
+Model file c:\users\lenovo\desktop\workshop2\8- linear analysis of a cantilever beam\tip_loaad.mud opened for reading.
+Model c:\users\lenovo\desktop\workshop2\8- linear analysis of a cantilever beam\tip_loaad opened.
+Command > *fill_view
+Command > *invisible_all *redraw
+Command > *visible_elements all_existing *redraw
+Command > *invisible_all *visible_elements all_existing *redraw
+Command > *visible_all *redraw
+Command > *edit_apply fixed
+Enter apply name : *edit_apply tip_load
+Enter apply name : 
+Command > *edit_apply tip_load

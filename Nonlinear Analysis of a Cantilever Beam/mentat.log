@@ -1,0 +1,226 @@
+Marc Mentat (C)Copyright 1994-2020, MSC Software Corporation, all rights reserved
+Command > *open_model "c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud"
+File has been written by Mentat 2020.
+Model file c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud opened for reading.
+Model c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad opened.
+Command > *fill_view
+Command > *new_loadcase *loadcase_type struc:static 
+Command > *loadcase_name my_non_linear
+Command > *loadcase_option stepping:multicriteria
+Command > *new_job structural 
+Enter new job analysis class : *add_job_loadcases my_non_linear
+Enter add job loadcase : *edit_job my_linear_job1
+Enter edit job : *edit_job job2
+Enter edit job : *edit_job job2 *job_name
+Enter job name : my_non_linear_job1
+Command > *edit_job my_non_linear_job1
+Enter edit job : *edit_job my_non_linear_job1 
+Enter edit job : *submit_job 1 *monitor_job
+INFO: Found 0 errors and 0 warnings.
+"C:\PROGRA~1\MSC~1.SOF\Marc\20200~1.0\MENTAT~1\bin\submit1.bat" marc default 1 1 - - tip_loaad_my_non_linear_job1 - - - - - n n - - 0 1 1 0 - -
+Job my_non_linear_job1 submitted!
+Command > *post_shape_deformed_and_original
+Command > *post_contour_bands
+Command > *edit_job my_non_linear_job1 
+Enter edit job : *monitor_job
+Enter edit job : *submit_job 1 *monitor_job
+INFO: Found 0 errors and 0 warnings.
+"C:\PROGRA~1\MSC~1.SOF\Marc\20200~1.0\MENTAT~1\bin\submit1.bat" marc default 1 1 - - tip_loaad_my_non_linear_job1 - - - - - n n - - 0 1 1 0 - -
+Job my_non_linear_job1 submitted!
+Command > *edit_job my_non_linear_job1
+Enter edit job : *edit_job my_non_linear_job1 
+Enter edit job : *update_job
+Enter edit job : *submit_job 1 *monitor_job
+INFO: Found 0 errors and 0 warnings.
+"C:\PROGRA~1\MSC~1.SOF\Marc\20200~1.0\MENTAT~1\bin\submit1.bat" marc default 1 1 - - tip_loaad_my_non_linear_job1 - - - - - n n - - 0 1 1 0 - -
+Job my_non_linear_job1 submitted!
+Command > *monitor_job
+Command > *edit_loadcase my_non_linear
+Enter loadcase to edit : *edit_loadcase my_non_linear 
+Enter loadcase to edit : 
+Command > *edit_job my_non_linear_job1
+Enter edit job : *edit_job my_non_linear_job1
+Enter edit job : *edit_job my_non_linear_job1 
+Enter edit job : *job_option large_strn_proc:automatic
+Command > *update_job
+Command > *submit_job 1 *monitor_job
+INFO: Found 0 errors and 0 warnings.
+"C:\PROGRA~1\MSC~1.SOF\Marc\20200~1.0\MENTAT~1\bin\submit1.bat" marc default 1 1 - - tip_loaad_my_non_linear_job1 - - - - - n n - - 0 1 1 0 - -
+Job my_non_linear_job1 submitted!
+Command > *save_model
+Command > *save_model
+Model file c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud opened for writing.
+Model saved to c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.
+Model file c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud opened for writing.
+Model saved to c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.
+Command > *monitor_job
+Command > @set($eltypemode,element)
+Command > *element_type 114
+Enter element list : *identify_types *regen
+Enter element list : *edit_job my_non_linear_job1
+Enter edit job : *edit_job my_non_linear_job1 
+Enter edit job : *submit_job 1 *monitor_job
+INFO: Found 0 errors and 0 warnings.
+"C:\PROGRA~1\MSC~1.SOF\Marc\20200~1.0\MENTAT~1\bin\submit1.bat" marc default 1 1 - - tip_loaad_my_non_linear_job1 - - - - - n n - - 0 1 1 0 - -
+Job my_non_linear_job1 submitted!
+Command > *monitor_job
+Command > *save_model
+Model file c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud opened for writing.
+Model saved to c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.
+Command > *post_contour_bands
+Command > *edit_job my_non_linear_job1 
+Enter edit job : *job_edit_status_file
+Enter edit job : @main(results) @popup(modelplot_pm) *post_open "tip_loaad_my_non_linear_job1.t16"
+Number of increments detected : 18
+Command > *post_value Displacement Y
+Enter post variable : *post_monitor
+Post increment 1:0
+Post increment 2:0
+Post increment 3:0
+Post increment 4:0
+Post increment 5:0
+Post increment 6:0
+Post increment 7:0
+Post increment 8:0
+Post increment 9:0
+Post increment 10:0
+Post increment 11:0
+Post increment 12:0
+Post increment 13:0
+Post increment 14:0
+Post increment 15:0
+Post increment 16:0
+Post increment 17:0
+End of analysis!
+Command > *fill_view
+Command > *post_rewind
+Command > *set_pathplot_path
+Enter first node in Path-Plot node path :  10
+Enter next node in Path-Plot node path (1) :  18
+Enter next node in Path-Plot node path (2) : #
+Enter first node in Path-Plot node path : *pathplot_add
+Enter X-axis variable : Arc Length
+Enter Y-axis variable : Displacement Y
+Enter X-axis variable : *current_graphics_window model:1
+Command > *post_monitor
+Post increment 1:0
+Post increment 2:0
+Post increment 3:0
+Post increment 4:0
+Post increment 5:0
+Post increment 6:0
+Post increment 7:0
+Post increment 8:0
+Post increment 9:0
+Post increment 10:0
+Post increment 11:0
+Post increment 12:0
+Post increment 13:0
+Post increment 14:0
+Post increment 15:0
+Post increment 16:0
+Post increment 17:0
+End of analysis!
+Command > *pathplot_fit
+Command > *current_graphics_window model:1
+Command > *post_rewind
+Command > *set_history_locations
+Enter history location list :  n:18
+Enter history location list : *history_collect 0 999999999 1
+Collected increment 0
+Collected increment 1
+Collected increment 2
+Collected increment 3
+Collected increment 4
+Collected increment 5
+Collected increment 6
+Collected increment 7
+Collected increment 8
+Collected increment 9
+Collected increment 10
+Collected increment 11
+Collected increment 12
+Collected increment 13
+Collected increment 14
+Collected increment 15
+Collected increment 16
+Collected increment 17
+Command > *prog_option history_plot:data_carrier_type_y:location
+Command > *prog_option history_plot:data_carrier_location_mode:single
+Command > *post_monitor
+Post increment 1:0
+Post increment 2:0
+Post increment 3:0
+Post increment 4:0
+Post increment 5:0
+Post increment 6:0
+Post increment 7:0
+Post increment 8:0
+Post increment 9:0
+Post increment 10:0
+Post increment 11:0
+Post increment 12:0
+Post increment 13:0
+Post increment 14:0
+Post increment 15:0
+Post increment 16:0
+Post increment 17:0
+End of analysis!
+Command > *history_fit
+Command > *post_rewind
+Command > *current_graphics_window model:1
+Command > *set_history_locations
+Enter history location list :  n:18
+Enter history location list : #
+Command > *history_collect 0 999999999 1
+Collected increment 0
+Collected increment 1
+Collected increment 2
+Collected increment 3
+Collected increment 4
+Collected increment 5
+Collected increment 6
+Collected increment 7
+Collected increment 8
+Collected increment 9
+Collected increment 10
+Collected increment 11
+Collected increment 12
+Collected increment 13
+Collected increment 14
+Collected increment 15
+Collected increment 16
+Collected increment 17
+Command > *prog_option history_plot:data_carrier_type_y:location
+Command > *set_history_data_carrier_location_y
+Enter Y-axis data carrier location : n:18
+Command > *set_history_location_variable_y
+Enter Y-axis location variable : Displacement Y
+Command > *history_add_curve
+Command > *history_fit
+Command > *history_fit
+Command > *current_graphics_window model:1
+Command > *current_graphics_window pathplot:1
+Command > *post_monitor
+Post increment 1:0
+Post increment 2:0
+Post increment 3:0
+Post increment 4:0
+Post increment 5:0
+Post increment 6:0
+Post increment 7:0
+Post increment 8:0
+Post increment 9:0
+Post increment 10:0
+Post increment 11:0
+Post increment 12:0
+Post increment 13:0
+Post increment 14:0
+Post increment 15:0
+Post increment 16:0
+Post increment 17:0
+End of analysis!
+Command > *current_graphics_window history:1
+Command > *save_model *quit yes
+Model file tip_loaad_my_non_linear_job1.t16.mud opened for writing.
+Model saved to tip_loaad_my_non_linear_job1.t16.

@@ -1,0 +1,17 @@
+| Created by Marc Mentat 2020 (64bit)
+*prog_option compatibility:prog_version:ment2020
+*prog_analysis_class structural
+*prog_use_current_job on
+*set_default_length_unit millimeter
+*set_model_length_unit millimeter
+|
+*open_model "c:\users\lenovo\desktop\workshop2\8- linear analysis of a cantilever beam\tip_loaad.mud"
+*fill_view
+*invisible_all *redraw
+*visible_elements all_existing *redraw
+*invisible_all *visible_elements all_existing *redraw
+*visible_all *redraw
+*edit_apply fixed
+*edit_apply tip_load
+
+*edit_apply tip_load

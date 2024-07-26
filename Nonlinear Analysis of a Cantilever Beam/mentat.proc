@@ -1,0 +1,106 @@
+| Created by Marc Mentat 2020 (64bit)
+*prog_option compatibility:prog_version:ment2020
+*prog_analysis_class structural
+*prog_use_current_job on
+*set_default_length_unit millimeter
+*set_model_length_unit millimeter
+|
+*open_model "c:\users\lenovo\desktop\workshop3\11- nonlinear analysis of a cantilever beam\tip_loaad.mud"
+*fill_view
+*new_loadcase *loadcase_type struc:static 
+*loadcase_name my_non_linear
+*loadcase_option stepping:multicriteria
+*new_job structural 
+*add_job_loadcases my_non_linear
+*edit_job my_linear_job1
+*edit_job job2
+*edit_job job2 *job_name
+my_non_linear_job1
+*edit_job my_non_linear_job1
+*edit_job my_non_linear_job1 
+*submit_job 1 *monitor_job
+*post_shape_deformed_and_original
+*post_contour_bands
+*edit_job my_non_linear_job1 
+*monitor_job
+*submit_job 1 *monitor_job
+*edit_job my_non_linear_job1
+*edit_job my_non_linear_job1 
+*update_job
+*submit_job 1 *monitor_job
+*monitor_job
+*edit_loadcase my_non_linear
+*edit_loadcase my_non_linear 
+
+*edit_job my_non_linear_job1
+*edit_job my_non_linear_job1
+*edit_job my_non_linear_job1 
+*job_option large_strn_proc:automatic
+*update_job
+*submit_job 1 *monitor_job
+*save_model
+*save_model
+*monitor_job
+*mouse_wheel_zoom(1,1.100000,-1.746641,-0.576730,-5.600000)
+*mouse_wheel_zoom(1,1.100000,-1.587856,-0.524300,-5.600000)
+*mouse_wheel_zoom(1,0.909091,-1.443505,-0.476636,-5.600000)
+*mouse_wheel_zoom(1,0.909091,-1.587856,-0.524300,-5.600000)
+*mouse_wheel_zoom(1,1.100000,-1.746641,-0.576729,-5.600000)
+*mouse_wheel_zoom(1,0.909091,-1.591855,-0.528302,-5.600000)
+*mouse_wheel_zoom(1,1.100000,-1.751041,-0.581132,-5.600000)
+*mouse_wheel_zoom(1,0.909091,-1.591855,-0.528302,-5.600000)
+*mouse_wheel_zoom(1,1.100000,-1.751040,-0.581132,-5.600000)
+@set($eltypemode,element)
+*element_type 114
+*identify_types *regen
+*edit_job my_non_linear_job1
+*edit_job my_non_linear_job1 
+*submit_job 1 *monitor_job
+*monitor_job
+*save_model
+*post_contour_bands
+*edit_job my_non_linear_job1 
+*job_edit_status_file
+@main(results) @popup(modelplot_pm) *post_open "tip_loaad_my_non_linear_job1.t16"
+*post_value Displacement Y
+*post_monitor
+*fill_view
+*post_rewind
+*set_pathplot_path
+ 10
+ 18
+#
+*pathplot_add
+Arc Length
+Displacement Y
+*current_graphics_window model:1
+*post_monitor
+*pathplot_fit
+*current_graphics_window model:1
+*post_rewind
+*set_history_locations
+ n:18
+*history_collect 0 999999999 1
+*prog_option history_plot:data_carrier_type_y:location
+*prog_option history_plot:data_carrier_location_mode:single
+*post_monitor
+*history_fit
+*post_rewind
+*current_graphics_window model:1
+*set_history_locations
+ n:18
+#
+*history_collect 0 999999999 1
+*prog_option history_plot:data_carrier_type_y:location
+*set_history_data_carrier_location_y
+n:18
+*set_history_location_variable_y
+Displacement Y
+*history_add_curve
+*history_fit
+*history_fit
+*current_graphics_window model:1
+*current_graphics_window pathplot:1
+*post_monitor
+*current_graphics_window history:1
+*save_model *quit yes
