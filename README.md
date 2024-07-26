@@ -47,19 +47,19 @@ The linear analysis was conducted using MSC Marc software. The following steps w
 
 5. **Loading**: A point load of 6000 lb was applied at the top right node in the negative Y direction.
 
-![Boundary Condition: Tip Load](https://github.com/your-username/your-repository/blob/main/path/to/tipload.PNG)
+![Boundary Condition: Tip Load](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/tipload.PNG)
 
 6. **Analysis**: A linear static loadcase was created and submitted for analysis.
 
 ### Results
 The results of the linear analysis are presented in the following figures. These include the Displacement distribution along the cantilever beam, the history plot, and the path plot.
 
-![Displacement Distribution](https://github.com/your-username/your-repository/blob/main/path/to/model_view_linear.png)
+![Displacement Distribution](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model_view_linear.png)
 
-![Path Plot](https://github.com/your-username/your-repository/blob/main/path/to/path_plot_linear.png)
+![Path Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path_plot_linear.png)
 *This plot illustrates the displacement along a path from the fixed end to the free end of the beam.*
 
-![History Plot](https://github.com/your-username/your-repository/blob/main/path/to/historical_plot_linear.png)
+![History Plot](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/historical_plot_linear.png)
 *This plot shows the displacement at the tip of the beam over the course of the analysis and the displacement Y is perfectly linear.*
 
 ## Nonlinear Analysis of Cantilever Beam
@@ -81,11 +81,11 @@ The cantilever beam is modeled using eight 2D plane stress, assumed strain, redu
 
 ### Results
 
-![Model View for Nonlinear Analysis](https://github.com/your-username/your-repository/blob/main/path/to/model_view_non_linear.png)
+![Model View for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/model_view_non_linear.png)
 
-![Path Plot for Nonlinear Analysis](https://github.com/your-username/your-repository/blob/main/path/to/path_plot_non_linear.png)
+![Path Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/path_plot_non_linear.png)
 
-![History Plot for Nonlinear Analysis](https://github.com/your-username/your-repository/blob/main/path/to/history_plot_non_linear.png)
+![History Plot for Nonlinear Analysis](https://github.com/Nour-ept/cantilever-beam-analysis-msc-marc/blob/main/history_plot_non_linear.png)
 *The plot demonstrates a nonlinear relationship between displacement and time, indicating the effects of large deformation.*
 
 ## Mesh Influence on the Cantilever Beam Analysis
